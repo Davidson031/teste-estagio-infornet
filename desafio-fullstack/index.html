@@ -1,0 +1,132 @@
+<html>
+   <head>
+      <title>Pagina Principal</title>
+      <meta charset="utf8">
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   </head>
+
+   <body>
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+              <div class="card" style="border-radius: 15px;">
+                <div class="card-body p-5">
+                  <h2 class="text-uppercase text-center mb-5">Cadastro de Beneficiário</h2>
+    
+                  <form name="myForm" action="/desafio-fullstack/processa_cadastro.php" method="POST" onsubmit="return validarForm()" enctype="multipart/form-data">
+                    <div class="form-outline mb-2">
+                      <label class="form-label">Nome do beneficiário</label>
+                      <input type="text" id="nome" name="nome" class="form-control form-control-lg" required/>                
+                    </div>
+    
+                    <div class="form-outline mb-2">
+                      <label class="form-label">Documento do beneficiário</label>
+                      <input type="text" id="documento" name="documento" class="form-control form-control-lg" required/>                     
+                    </div>
+    
+                    <div class="form-outline mb-4">
+                      <label class="form-label">Data de Nascimento</label>
+                      <input type="date" id="nascimento" name="nascimento" class="form-control form-control-lg" required/>                      
+                    </div>
+    
+                    <div class="form-outline mb-3">
+                      <label class="form-label">Sexo</label>
+                      <select class="form-select" id="sexo" name="sexo" aria-label="Default select example">
+                        <option selected>M</option>
+                        <option>F</option>
+                      </select>
+                    </div>
+
+                    <div class="form-outline mb-3">
+                      <label class="form-label">Situação</label>
+                        <select class="form-select" id="situacao" name="situacao" aria-label="Default select example">
+                          <option selected>A</option>
+                          <option>I</option>
+                        </select>                     
+                    </div>
+
+        
+                    <div class="form-outline mb-2">
+                      <label class="form-label" >Logradouro</label>
+                      <input type="text" id="logradouro" name="logradouro" class="form-control form-control-lg" required/>                
+                    </div>
+
+
+                    <div class="form-outline mb-2">
+                      <label class="form-label" >Numero</label>
+                      <input type="number" id="numero" name="numero" class="form-control form-control-lg" required/>                
+                    </div>
+
+                    <div class="form-outline mb-2">
+                      <label class="form-label">Bairro</label>
+                      <input type="text" id="bairro" name="bairro" class="form-control form-control-lg" required/>                
+                    </div>
+
+                    <div class="form-outline mb-2">
+                      <label class="form-label">Cidade</label>
+                      <input type="text" id="cidade" name="cidade" class="form-control form-control-lg" required/>                
+                    </div>
+
+                    <div class="form-outline mb-3">
+                      <label class="form-label">Estado</label>
+                      <select class="form-select" id="estado" name="estado" aria-label="Default select example">
+                        <option selected>AM</option>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AM</option>
+                        <option>AP</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SP</option>
+                        <option>SE</option>
+                        <option>TO</option>                        
+                      </select>
+                    </div>
+
+                    <div class="form-outline mb-2">
+                      <label class="form-label">E-mail</label>
+                      <input type="email" id="email" name="email" class="form-control form-control-lg" required/>                
+                    </div>
+
+                    <div class="form-outline mb-2">
+                      <label class="form-label" >Telefone</label>
+                      <input type="text" id="telefone" name="telefone" class="form-control form-control-lg" required/>                
+                    </div>
+
+                    <br><br>
+
+                    <div class="d-flex justify-content-center">
+                      <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" id="BtnCadastrar">Cadastrar</button>
+                    </div>
+   
+                  </form>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="js/script.js"></script>     
+   </body>
+  </html>
